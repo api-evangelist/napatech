@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of https://www.napatech.com/.well-known/*
+host: https://www.napatech.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+notes: >-
+  Napatech publishes no /.well-known/ discovery surface and no llms.txt. It is a
+  hardware/SDK vendor (FPGA SmartNICs); its developer surface is the NTAPI/NTPL C
+  SDK bundled with hardware, not a web API, so OIDC/OAuth/api-catalog discovery is
+  not applicable. All paths probed 2026-07-20 returned 404 (no WAF block).

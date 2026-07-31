@@ -1,0 +1,62 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/napatech (GitHub org repos, GitHub API 2026-07-20)
+notes: >-
+  Napatech ships no client SDK in a public language package registry (npm, PyPI,
+  Maven, NuGet, crates.io, RubyGems, Packagist, pkg.go.dev). Its primary developer
+  surface is the NTAPI/NTPL C/C++ SDK bundled with the SmartNIC driver software
+  (downloaded from the Napatech support portal, not a registry). What Napatech
+  publishes openly are first-party source integrations / additions to popular
+  network-processing frameworks on its GitHub org. Those are catalogued below as
+  source packages (registry: github); none are installable via a package manager,
+  so no `SDKs` rating pointer is emitted.
+packages:
+  - language: c
+    registry: github
+    name: napatech/ntapi_examples
+    url: https://github.com/napatech/ntapi_examples
+    install: git clone https://github.com/napatech/ntapi_examples
+    description: Collection of NTPL code examples for the Napatech NTAPI SDK.
+    official: true
+  - language: c
+    registry: github
+    name: napatech/dpdk
+    url: https://github.com/napatech/dpdk
+    install: git clone https://github.com/napatech/dpdk
+    description: Napatech DPDK additions (poll-mode driver for Napatech SmartNICs).
+    official: true
+  - language: c
+    registry: github
+    name: napatech/vpp
+    url: https://github.com/napatech/vpp
+    install: git clone https://github.com/napatech/vpp
+    description: FD.io VPP mirror with Napatech additions.
+    official: true
+  - language: python
+    registry: github
+    name: napatech/scapy
+    url: https://github.com/napatech/scapy
+    install: git clone https://github.com/napatech/scapy
+    description: Napatech fork of Scapy with Napatech SmartNIC support.
+    official: true
+  - language: cpp
+    registry: github
+    name: napatech/zeek_plugin
+    url: https://github.com/napatech/zeek_plugin
+    install: git clone https://github.com/napatech/zeek_plugin
+    description: Zeek (Bro) plugin for Napatech SmartNICs.
+    official: true
+  - language: c
+    registry: github
+    name: napatech/daq_dpdk_multiqueue
+    url: https://github.com/napatech/daq_dpdk_multiqueue
+    install: git clone https://github.com/napatech/daq_dpdk_multiqueue
+    description: Snort DPDK DAQ module with multiqueue support, primarily for Napatech NICs.
+    official: true
+  - language: python
+    registry: github
+    name: napatech/linkvirt-ovs-openstack-plugin
+    url: https://github.com/napatech/linkvirt-ovs-openstack-plugin
+    install: git clone https://github.com/napatech/linkvirt-ovs-openstack-plugin
+    description: Napatech Link-Virtualization OVS OpenStack (Neutron) plugin.
+    official: true

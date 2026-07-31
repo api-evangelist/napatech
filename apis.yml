@@ -1,8 +1,28 @@
 aid: napatech
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/napatech.png
 name: Napatech
-description: 'Napatech is a company surfaced as a portfolio company of northzone and added to the API
-  Evangelist network as a stub for enrichment. Sector: infra-devtools. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Napatech is a Danish provider of programmable FPGA-based SmartNICs and
+  network-acceleration hardware used for high-speed network monitoring,
+  cybersecurity, and telecom/5G workloads. Its Link-Capture and Link-Inline
+  software, together with the NTAPI/NTPL developer SDK, let applications capture,
+  filter, and process network traffic at line rate with zero packet loss. The
+  developer surface is a C/C++ hardware SDK (NTAPI) plus the NTPL programming
+  language rather than a web/REST API; integrations ship as open-source additions
+  to DPDK, VPP, Open vSwitch, Scapy, and Zeek via the napatech GitHub
+  organization. Surfaced as a portfolio company of Northzone and enriched by the
+  API Evangelist pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/napatech/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Infra Devtools
+- Networking
+- SmartNIC
+- FPGA
+- Network Monitoring
+- Cybersecurity
+- Packet Capture
+- Hardware SDK
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,30 @@ maintainers:
 common:
 - type: Website
   url: https://www.napatech.com
+- type: Documentation
+  url: https://docs.napatech.com
+- type: APIReference
+  url: https://docs.napatech.com/r/Reference-Documentation/ntapi.h
+- type: Support
+  url: https://www.napatech.com/support/
+- type: Blog
+  url: https://www.napatech.com/category/blog/
+- type: PrivacyPolicy
+  url: https://www.napatech.com/privacy-policy/
+- type: TermsOfService
+  url: https://forum.napatech.com/terms-of-service/
+- type: GitHubOrganization
+  url: https://github.com/napatech
+- type: Packages
+  url: packages/napatech-packages.yml
+- type: LLMsTxt
+  url: llms/napatech-llms.txt
+- type: DomainSecurity
+  url: security/napatech-domain-security.yml
+- type: WellKnown
+  url: well-known/napatech-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
